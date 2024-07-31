@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link href="/css/tailwind.css" rel="stylesheet">
+  <link href="/css/signup.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/auth/signup" method="POST">
+      <h2>Sign Up</h2>
+      <div class="input-field">
+        <input type="text" required name="username"> <!-- Add name attributes -->
+        <label>Enter your username</label>
+      </div>
+      <div class="input-field">
+        <input type="email" required name="email">
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required name="password">
+        <label>Enter your password</label>
+      </div>
+      <button type="submit">Sign Up</button>
+      <div class="register">
+        <p>Already have an account? <a href="/auth/login">Login</a></p> <!-- Update the link -->
+      </div>
+    </form>
+  </div>
+</body>
+</html>
